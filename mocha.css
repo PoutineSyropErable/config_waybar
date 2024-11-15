@@ -25,6 +25,57 @@
 @define-color mantle #181825;
 @define-color crust #11111b;
 
+@define-color purple1 #d16aff;
+@define-color pink5 #ff4cc1;
+
+@define-color grad1 #bb9af7;
+@define-color grad2 #c198ee;
+@define-color grad3 #c796e5;
+@define-color grad4 #cd94dc;
+@define-color grad5 #d393d3;
+@define-color grad6 #da91cb;
+@define-color grad7 #e090c2;
+@define-color grad8 #e68eb9;
+@define-color grad9 #ec8cb0;
+@define-color grad10 #f38ba8;
+
+@define-color blue1 #e5e5ff;
+@define-color blue2 #7f7fff;
+@define-color blue3 #0000ff;
+@define-color blue4 #00007f;
+@define-color blue5 #000019;
+
+@define-color blue6 #45b6fe;
+@define-color blue7 #6ac5fe;
+@define-color blue8 #8fd3fe;
+@define-color blue9 #b5e2ff;
+@define-color blue10 #daf0ff;
+
+@define-color neon_blue #04d9ff;
+
+@define-color sky_blue1 #ccf8ff;
+@define-color sky_blue2 #89eeff;
+@define-color sky_blue3 #66e9ff;
+@define-color sky_blue4 #42e5ff;
+@define-color sky_blue5 #1ee0ff;
+@define-color sky_blue6 #00d7f9;
+@define-color sky_blue7 #00b8d6;
+@define-color sky_blue8 #0099b2;
+@define-color sky_blue9 #007b8e;
+@define-color sky_blue10 #005c6b;
+@define-color sky_blue11 #003d47;
 
 
+/* Primary yellow shades */
+@define-color yellow1 #f9c70c; /* Deep golden yellow */
+@define-color yellow2 #fed000; /* Bright sunflower yellow */
+@define-color yellow3 #ffe338; /* Light yellow */
+@define-color yellow4 #f4bc1c; /* Warm golden yellow */
+
+/* Light yellow shades */
+@define-color light_yellow1 #fffee0; /* Very pale yellow */
+@define-color light_yellow2 #fffec8; /* Pale yellow */
+@define-color light_yellow3 #fffdaf; /* Light cream yellow */
+@define-color light_yellow4 #fffd8d; /* Bright light yellow */
+@define-color light_yellow5 #fdfa72; /* Vibrant lemon yellow */
 
