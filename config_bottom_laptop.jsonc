@@ -1,20 +1,8 @@
 {
 	"position": "bottom",
 	"modules-left": ["mpris"],
-	"modules-right": ["network"],
-	"output": "DP-3",
-
-
-
-	"network": {
-		"interface": "enp14s0",
-		"family": "ipv4",
-		"format": "{ipaddr}",
-		"format-ethernet": "󰀂  {ipaddr}/{cidr}",
-		"format-disconnected": "Disconnected",
-		"tooltip-format": "Interface: {ifname} | IP: {ipaddr} | Gateway: {gwaddr}",
-		"max-length": 50
-	},
+	"modules-right": [ "network", "battery"],
+	// "output": "eDP-1",
 
 	"battery": {
 		"states": {
@@ -31,6 +19,25 @@
 		"format-icons": ["", "", "", "", ""],
 		"tooltip-format": "{time}"
 	},
+
+
+	"network": {
+		"format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}   {ipaddr}/{cidr}",
+		"format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
+		"format-linked": "{ifname} (No IP) ",
+		"format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
+		"tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
+	},
+
+	// "network": {
+	// 	"interface": "wlan0",
+	// 	"family": "ipv4",
+	// 	"format": "{ipaddr}",
+	// 	"format-ethernet": "󰀂  {ipaddr}/{cidr}",
+	// 	"format-disconnected": "Disconnected",
+	// 	"tooltip-format": "Interface: {ifname} | IP: {ipaddr} | Gateway: {gwaddr}",
+	// 	"max-length": 50
+	// },
 
 	"mpris": {
 		"interval": 1,
