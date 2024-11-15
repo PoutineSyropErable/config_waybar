@@ -20,6 +20,11 @@
 		"tooltip-format": "{time}"
 	},
 
+	"backlight": {
+    "device": "intel_backlight",
+    "format": "{percent}% {icon}",
+    "format-icons": ["", ""]
+	}
 
 	"network": {
 		"format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}  |  󰀂  {ipaddr}/{cidr}",
