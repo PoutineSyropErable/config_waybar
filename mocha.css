@@ -79,3 +79,55 @@
 @define-color light_yellow4 #fffd8d; /* Bright light yellow */
 @define-color light_yellow5 #fdfa72; /* Vibrant lemon yellow */
 
+
+@define-color blue_gradient1 #89b4fa;
+@define-color blue_gradient2 #81b4fa;
+@define-color blue_gradient3 #79b4fa;
+@define-color blue_gradient4 #72b4fb;
+@define-color blue_gradient5 #6ab4fb;
+@define-color blue_gradient6 #63b5fc;
+@define-color blue_gradient7 #5bb5fc;
+@define-color blue_gradient8 #54b5fd;
+@define-color blue_gradient9 #4cb5fd;
+@define-color blue_gradient10 #45b6fe;
+
+
+@define-color pink_gradient1 #f38ba8;
+@define-color pink_gradient2 #f483aa;
+@define-color pink_gradient3 #f57dad;
+@define-color pink_gradient4 #f775b0;
+@define-color pink_gradient5 #f86fb3;
+@define-color pink_gradient6 #f968b5;
+@define-color pink_gradient7 #fb61b8;
+@define-color pink_gradient8 #fc5abb;
+@define-color pink_gradient9 #fd53be;
+@define-color pink_gradient10 #ff4cc1;
+
+
+@define-color red1 #bc0404; /* Dark red */
+@define-color red2 #cc0000; /* Bright red */
+@define-color red3 #f44336; /* Standard red */
+@define-color red4 #ff564a; /* Light red */
+@define-color red5 #fc6a5f; /* Soft pinkish red */
+
+
+/* Red shades */
+@define-color full_red #ff0000; /* Full red */
+@define-color red_mid #ff4040;      /* Bright red */
+@define-color nice_red #080000; /* Deep, near-black red */
+
+/* Pink shades */
+@define-color pink1 #fdeff7;    /* Very light pink */
+@define-color pink2 #ff62d1;    /* Vivid pink */
+@define-color pink3 #ffa4e9;    /* Light pink */
+@define-color pink4 #ff62d1;    /* Bright pink (same as pink2) */
+@define-color pink5 #ff4cc1;    /* Deep pink */
+@define-color pink6 #ffc0cb;    /* Soft pink */
+@define-color pink7 #ff0065;    /* Neon pink */
+@define-color pink8 #ff3377;    /* Rose pink */
+@define-color pink9 #ff3377;    /* Rose pink (same as pink8) */
+@define-color pink10 #ff77aa;   /* Warm pink */
+@define-color pink11 #ec3a8b;   /* Dark rose pink */
+
+
+@define-color orange_iron #ff9e64; 

@@ -2,7 +2,7 @@
 
 * {
 	font-family: "MesloLGS Nerd Font Mono Bold";
-	font-size: 16px;
+	font-size: 14px;
 	min-height: 0;
 	font-weight: bold;
 }
@@ -27,13 +27,16 @@ window#waybar {
 #clock,
 #network,
 #mpris,
+#backlight,
+#custom-kbd_backlight,
 #battery {
 	background-color: @crust;
 	color: @overlay0;
-	padding: 2px 8px;
-	border-radius: 8px; /* Optional: adds rounded corners for a floating look */
-	margin: 0 4px; /* Adds spacing between modules */
+	padding-left: 3px;
+	padding-right: 3px;
+    margin: 4px 10px;          /* Space between other modules */
 	border-bottom: 2px solid @overlay1; /* Optional: underlines individual modules */
+	border-radius: 8px; /* Optional: adds rounded corners for a floating look */
 }
 
 #window {
@@ -111,9 +114,12 @@ button:hover {
 }
 
 #network {
-	color: @yellow;
-	border-bottom: 2px solid @yellow;
-	margin-right: 10px; /* Adjust the value as needed */
+	color: @orange_iron;
+	border-bottom: 2px solid @red4;
+	padding-left: 3px;
+	padding-right: 3px;
+    margin: 4px 10px;           /* Space between modules */
+
 }
 
 #idle_inhibitor {
@@ -188,3 +194,37 @@ button:hover {
 #mpris .dynamic {
 	color: @teal;
 }
+
+
+
+#custom-kbd_backlight {
+    background-color: @base; /* Base background color */
+    color: @blue_gradient7;         /* Text color */
+	padding-left: 3px;
+	padding-right: 3px;
+    margin: 4px 10px;          /* Space between other modules */
+    border-bottom: 2px solid @blue_gradient7; /* Underline for emphasis */
+}
+
+#custom-kbd_backlight:hover {
+    background-color: @blue_gradient7; /* Highlight on hover */
+    color: @base;              /* Text contrast on hover */
+    border-bottom: 2px solid @blue_gradient7; /* Keeps underline consistent */
+}
+
+
+#backlight {
+    background-color: @base; /* Matches the base theme */
+    color: @yellow;            /* Text color */
+	padding-left: 3px;
+	padding-right: 3px;
+    margin: 4px 10px;           /* Space between modules */
+    border-bottom: 2px solid @yellow; /* Underline with a blue accent */
+}
+
+#backlight:hover {
+    background-color: @yellow; /* Highlight on hover */
+    color: @base;            /* Contrast for text */
+    border-bottom: 2px solid @yellow; /* Keeps underline consistent */
+}
+
