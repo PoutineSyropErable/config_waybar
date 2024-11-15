@@ -1,0 +1,101 @@
+[2024-10-30 16:35:41.855] [info] Using configuration file /home/francois/.config/waybar/config.jsonc
+[2024-10-30 16:35:41.855] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-10-30 16:35:41.855] [info] Using CSS file /home/francois/.config/waybar/style.css
+
+(waybar:1436371): Gtk-WARNING **: 16:35:41.855: Theme parsing error: style.css:21:19: Not using units is deprecated. Assuming 'px'.
+
+(waybar:1436371): Gtk-WARNING **: 16:35:41.855: Theme parsing error: style.css:22:20: Not using units is deprecated. Assuming 'px'.
+[2024-10-30 16:35:41.858] [info] Hyprland IPC starting
+[2024-10-30 16:35:41.858] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-10-30 16:35:41.870] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-10-30 16:35:41.878] [info] Bar configured (width: 1920, height: 29) for output: DP-3
+[2024-10-30 16:35:41.878] [info] Bar configured (width: 1920, height: 29) for output: HDMI-A-1
+
+** (waybar:1436371): WARNING **: 16:35:41.880: Status Notifier Item with bus name ':1.5139' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+Gdk-Message: 16:39:09.611: Error reading events from display: Broken pipe
+[2024-11-02 16:19:12.152] [info] Using configuration file /home/francois/.config/waybar/config_bottom.jsonc
+[2024-11-02 16:19:12.153] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-11-02 16:19:12.153] [info] Using configuration file /home/francois/.config/waybar/config.jsonc
+[2024-11-02 16:19:12.153] [info] Using CSS file /home/francois/.config/waybar/style.css
+
+(waybar:47302): Gtk-WARNING **: 16:19:12.153: Theme parsing error: style.css:21:19: Not using units is deprecated. Assuming 'px'.
+
+(waybar:47302): Gtk-WARNING **: 16:19:12.153: Theme parsing error: style.css:22:20: Not using units is deprecated. Assuming 'px'.
+[2024-11-02 16:19:12.153] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-11-02 16:19:12.153] [info] Using CSS file /home/francois/.config/waybar/style.css
+
+(waybar:47301): Gtk-WARNING **: 16:19:12.154: Theme parsing error: style.css:21:19: Not using units is deprecated. Assuming 'px'.
+
+(waybar:47301): Gtk-WARNING **: 16:19:12.154: Theme parsing error: style.css:22:20: Not using units is deprecated. Assuming 'px'.
+[2024-11-02 16:19:12.173] [info] Hyprland IPC starting
+[2024-11-02 16:19:12.174] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-02 16:19:12.181] [info] Bar configured (width: 1920, height: 23) for output: DP-3
+[2024-11-02 16:19:12.181] [info] Bar configured (width: 1920, height: 23) for output: HDMI-A-1
+[2024-11-02 16:19:12.185] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-02 16:19:12.192] [info] Bar configured (width: 1920, height: 29) for output: DP-3
+[2024-11-02 16:19:12.192] [info] Bar configured (width: 1920, height: 29) for output: HDMI-A-1
+
+** (waybar:47301): WARNING **: 16:19:12.193: Status Notifier Item with bus name ':1.15' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2024-11-02 16:19:21.261] [info] Using configuration file /home/francois/.config/waybar/config_bottom.jsonc
+[2024-11-02 16:19:21.261] [info] Using configuration file /home/francois/.config/waybar/config.jsonc
+[2024-11-02 16:19:21.262] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-11-02 16:19:21.262] [info] Using CSS file /home/francois/.config/waybar/style.css
+[2024-11-02 16:19:21.262] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-11-02 16:19:21.262] [info] Using CSS file /home/francois/.config/waybar/style.css
+
+(waybar:47514): Gtk-WARNING **: 16:19:21.262: Theme parsing error: style.css:21:19: Not using units is deprecated. Assuming 'px'.
+
+(waybar:47514): Gtk-WARNING **: 16:19:21.262: Theme parsing error: style.css:22:20: Not using units is deprecated. Assuming 'px'.
+
+(waybar:47513): Gtk-WARNING **: 16:19:21.262: Theme parsing error: style.css:21:19: Not using units is deprecated. Assuming 'px'.
+
+(waybar:47513): Gtk-WARNING **: 16:19:21.262: Theme parsing error: style.css:22:20: Not using units is deprecated. Assuming 'px'.
+[2024-11-02 16:19:21.281] [info] Hyprland IPC starting
+[2024-11-02 16:19:21.282] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-02 16:19:21.292] [info] Bar configured (width: 1920, height: 23) for output: DP-3
+[2024-11-02 16:19:21.292] [info] Bar configured (width: 1920, height: 23) for output: HDMI-A-1
+[2024-11-02 16:19:21.295] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-02 16:19:21.301] [info] Bar configured (width: 1920, height: 29) for output: DP-3
+[2024-11-02 16:19:21.301] [info] Bar configured (width: 1920, height: 29) for output: HDMI-A-1
+
+** (waybar:47513): WARNING **: 16:19:21.303: Status Notifier Item with bus name ':1.15' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2024-11-02 16:19:32.767] [info] Bar configured (width: 1920, height: 1) for output: DP-3
+[2024-11-02 16:19:32.767] [info] Bar configured (width: 1920, height: 1) for output: HDMI-A-1
+[2024-11-02 16:19:32.866] [info] Bar configured (width: 1920, height: 23) for output: DP-3
+[2024-11-02 16:19:32.866] [info] Bar configured (width: 1920, height: 23) for output: HDMI-A-1
+[2024-11-02 16:20:24.331] [info] Bar configured (width: 1920, height: 1) for output: DP-3
+[2024-11-02 16:20:24.331] [info] Bar configured (width: 1920, height: 1) for output: HDMI-A-1
+[2024-11-02 16:20:24.644] [info] Bar configured (width: 1920, height: 23) for output: DP-3
+[2024-11-02 16:20:24.644] [info] Bar configured (width: 1920, height: 23) for output: HDMI-A-1
+Terminated
+./waybar_toggle.sh: line 4: 47301 Killed                  waybar
+./waybar_toggle.sh: line 4: 47302 Killed                  waybar -c "/home/francois/.config/waybar/config_bottom.jsonc"
+[2024-11-02 17:32:03.590] [info] Using configuration file /home/francois/.config/waybar/config.jsonc
+[2024-11-02 17:32:03.590] [info] Using configuration file /home/francois/.config/waybar/config_bottom.jsonc
+[2024-11-02 17:32:03.590] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-11-02 17:32:03.590] [info] Using CSS file /home/francois/.config/waybar/style.css
+[2024-11-02 17:32:03.590] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-11-02 17:32:03.590] [info] Using CSS file /home/francois/.config/waybar/style.css
+
+(waybar:7176): Gtk-WARNING **: 17:32:03.590: Theme parsing error: style.css:21:19: Not using units is deprecated. Assuming 'px'.
+
+(waybar:7176): Gtk-WARNING **: 17:32:03.590: Theme parsing error: style.css:22:20: Not using units is deprecated. Assuming 'px'.
+
+(waybar:7177): Gtk-WARNING **: 17:32:03.591: Theme parsing error: style.css:21:19: Not using units is deprecated. Assuming 'px'.
+
+(waybar:7177): Gtk-WARNING **: 17:32:03.591: Theme parsing error: style.css:22:20: Not using units is deprecated. Assuming 'px'.
+[2024-11-02 17:32:03.593] [info] Hyprland IPC starting
+[2024-11-02 17:32:03.593] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-02 17:32:03.606] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-02 17:32:03.613] [info] Bar configured (width: 1920, height: 29) for output: DP-3
+[2024-11-02 17:32:03.613] [info] Bar configured (width: 1920, height: 29) for output: HDMI-A-1
+
+** (waybar:7176): WARNING **: 17:32:03.614: Status Notifier Item with bus name ':1.8' and object path '/org/ayatana/NotificationItem/nm_applet' is already registered
+[2024-11-02 17:32:03.646] [info] Bar configured (width: 1920, height: 23) for output: DP-3
+[2024-11-02 17:32:03.646] [info] Bar configured (width: 1920, height: 23) for output: HDMI-A-1
+[2024-11-02 17:32:37.179] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-02 17:32:37.180] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-02 17:32:37.180] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-02 17:32:37.180] [info] Loading persistent workspaces from Hyprland workspace rules
+Gdk-Message: 17:32:39.292: Error reading events from display: Broken pipe
+Gdk-Message: 17:32:39.292: Error reading events from display: Broken pipe

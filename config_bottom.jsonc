@@ -1,0 +1,32 @@
+{
+	"position": "bottom",
+	"modules-left": ["mpris"],
+	"modules-right": ["network"],
+	"output": "DP-3",
+
+
+
+	"network": {
+		"interface": "enp14s0",
+		"family": "ipv4",
+		"format": "{ipaddr}",
+		"format-ethernet": "󰀂  {ipaddr}/{cidr}",
+		"format-disconnected": "Disconnected",
+		"tooltip-format": "Interface: {ifname} | IP: {ipaddr} | Gateway: {gwaddr}",
+		"max-length": 50
+	},
+
+	"mpris": {
+		"interval": 1,
+		"format": "{player_icon} {dynamic}",
+		"format-paused": "{status_icon} <i>{dynamic}</i>",
+		"player-icons": {
+			"default": "▶",
+			"mpv": "🎵"
+		},
+		"status-icons": {
+			"paused": "⏸"
+		},
+		// "ignored-players": ["firefox"]
+	},
+}
