@@ -114,8 +114,8 @@ button:hover {
 }
 
 #network {
-	color: @light_yellow5 ;
-	border-bottom: 2px solid @yellow4;
+	color: @yellow4 ;
+	border-bottom: 2px solid @light_yellow2;
 	padding-left: 3px;
 	padding-right: 3px;
     margin: 4px 10px;           /* Space between modules */

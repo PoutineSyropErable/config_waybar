@@ -36,10 +36,10 @@
 
 
 	"network": {
-		"format-wifi": "<span size='13000' foreground='#f4bc1c'>  </span>{essid}  |  <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
-		"format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰤭  </span> Disconnected",
+		"format-wifi": "<span size='13000' foreground='#fdfa72'>  </span>{essid}  |  <span size='13000' foreground='#fdfa72'>󰀂 </span> {ipaddr}/{cidr}",
+		"format-ethernet": "<span size='13000' foreground='#fdfa72'>󰤭  </span> Disconnected",
 		"format-linked": "{ifname} (No IP) ",
-		"format-disconnected": "<span size='13000' foreground='#f4bc1c'>  </span>Disconnected",
+		"format-disconnected": "<span size='13000' foreground='#fdfa72'>  </span>Disconnected",
 		"tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
 	},
 
