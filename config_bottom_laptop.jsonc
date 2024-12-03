@@ -1,8 +1,8 @@
 {
 	"position": "bottom",
-	"modules-left": ["mpris"],
+	"modules-left": ["network"],
 	"modules-center": [ "custom/kbd_backlight", "backlight" ],
-	"modules-right": [ "network", "battery"],
+	"modules-right": [ "battery" ],
 	// "output": "eDP-1",
 
 	"battery": {
@@ -36,10 +36,10 @@
 
 
 	"network": {
-		"format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}  |  <span size='13000' foreground='#f5e0dc'>󰀂 </span> {ipaddr}/{cidr}",
-		"format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
+		"format-wifi": "<span size='13000' foreground='#f4bc1c'>  </span>{essid}  |  <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
+		"format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰤭  </span> Disconnected",
 		"format-linked": "{ifname} (No IP) ",
-		"format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
+		"format-disconnected": "<span size='13000' foreground='#f4bc1c'>  </span>Disconnected",
 		"tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
 	},
 
