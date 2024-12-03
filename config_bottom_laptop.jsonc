@@ -7,16 +7,20 @@
 
 	"battery": {
 		"states": {
+			"mid": 50,
 			"warning": 30,
 			"critical": 15
 		},
-		"format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
-		"format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
-		"format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
-		"format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-		"format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-		"format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
-		"format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+		// "format-plugged": 	"<span size='13000' foreground='#7cc7e9'> </span>{capacity}% {time}",
+		"format-time": "  |  {H}:{m}m",
+		"format-alt": 		"<span size='13000' foreground='#0000ff'>{icon} </span> {time}",
+		"format-charging": 	"<span size='13000' foreground='#003fbf'> </span>{capacity}% {time}",
+		"format-plugged": 	"<span size='13000' foreground='#007f7f'> </span>{capacity}% {time}",
+		"format-full": 		"<span size='13000' foreground='#04d9ff'> </span>{capacity}%",
+		"format": 			"<span size='13000' foreground='#45b6fe'>{icon} </span> {capacity}% {time}",
+		"format-mid": 		"<span size='13000' foreground='#94a1f5'>{icon} </span> {capacity}% {time}",
+		"format-warning": 	"<span size='13000' foreground='#ec68d7'>{icon} </span> {capacity}% {time}",
+		"format-critical": 	"<span size='13000' foreground='#ff4cc1'>{icon} </span> {capacity}% {time}",
 		"format-icons": ["", "", "", "", ""],
 		"tooltip-format": "{time}"
 	},

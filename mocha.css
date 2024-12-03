@@ -25,19 +25,6 @@
 @define-color mantle #181825;
 @define-color crust #11111b;
 
-@define-color purple1 #d16aff;
-@define-color pink5 #ff4cc1;
-
-@define-color grad1 #bb9af7;
-@define-color grad2 #c198ee;
-@define-color grad3 #c796e5;
-@define-color grad4 #cd94dc;
-@define-color grad5 #d393d3;
-@define-color grad6 #da91cb;
-@define-color grad7 #e090c2;
-@define-color grad8 #e68eb9;
-@define-color grad9 #ec8cb0;
-@define-color grad10 #f38ba8;
 
 @define-color blue1 #e5e5ff;
 @define-color blue2 #7f7fff;
@@ -66,20 +53,6 @@
 @define-color sky_blue11 #003d47;
 
 
-/* Primary yellow shades */
-@define-color yellow1 #f9c70c; /* Deep golden yellow */
-@define-color yellow2 #fed000; /* Bright sunflower yellow */
-@define-color yellow3 #ffe338; /* Light yellow */
-@define-color yellow4 #f4bc1c; /* Warm golden yellow */
-
-/* Light yellow shades */
-@define-color light_yellow1 #fffee0; /* Very pale yellow */
-@define-color light_yellow2 #fffec8; /* Pale yellow */
-@define-color light_yellow3 #fffdaf; /* Light cream yellow */
-@define-color light_yellow4 #fffd8d; /* Bright light yellow */
-@define-color light_yellow5 #fdfa72; /* Vibrant lemon yellow */
-
-
 @define-color blue_gradient1 #89b4fa;
 @define-color blue_gradient2 #81b4fa;
 @define-color blue_gradient3 #79b4fa;
@@ -92,6 +65,34 @@
 @define-color blue_gradient10 #45b6fe;
 
 
+/* 10-step gradient */
+@define-color blue_pink_grad1  #45b6fe; /* Start - Blue */
+@define-color blue_pink_grad2  #5faefc;
+@define-color blue_pink_grad3  #79a6f8;
+@define-color blue_pink_grad4  #94a1f5;
+@define-color blue_pink_grad5  #ae9af2;
+@define-color blue_pink_grad6  #c894ed;
+@define-color blue_pink_grad7  #e27fe3;
+@define-color blue_pink_grad8  #ec68d7;
+@define-color blue_pink_grad9  #f651cb;
+@define-color blue_pink_grad10 #ff4cc1; /* End - Pink */
+
+
+@define-color purple1 #d16aff;
+@define-color pink5 #ff4cc1;
+
+@define-color grad1 #bb9af7;
+@define-color grad2 #c198ee;
+@define-color grad3 #c796e5;
+@define-color grad4 #cd94dc;
+@define-color grad5 #d393d3;
+@define-color grad6 #da91cb;
+@define-color grad7 #e090c2;
+@define-color grad8 #e68eb9;
+@define-color grad9 #ec8cb0;
+@define-color grad10 #f38ba8;
+
+
 @define-color pink_gradient1 #f38ba8;
 @define-color pink_gradient2 #f483aa;
 @define-color pink_gradient3 #f57dad;
@@ -102,19 +103,6 @@
 @define-color pink_gradient8 #fc5abb;
 @define-color pink_gradient9 #fd53be;
 @define-color pink_gradient10 #ff4cc1;
-
-
-@define-color red1 #bc0404; /* Dark red */
-@define-color red2 #cc0000; /* Bright red */
-@define-color red3 #f44336; /* Standard red */
-@define-color red4 #ff564a; /* Light red */
-@define-color red5 #fc6a5f; /* Soft pinkish red */
-
-
-/* Red shades */
-@define-color full_red #ff0000; /* Full red */
-@define-color red_mid #ff4040;      /* Bright red */
-@define-color nice_red #080000; /* Deep, near-black red */
 
 /* Pink shades */
 @define-color pink1 #fdeff7;    /* Very light pink */
@@ -129,5 +117,33 @@
 @define-color pink10 #ff77aa;   /* Warm pink */
 @define-color pink11 #ec3a8b;   /* Dark rose pink */
 
+/* Light yellow shades */
+@define-color light_yellow1 #fffee0; /* Very pale yellow */
+@define-color light_yellow2 #fffec8; /* Pale yellow */
+@define-color light_yellow3 #fffdaf; /* Light cream yellow */
+@define-color light_yellow4 #fffd8d; /* Bright light yellow */
+@define-color light_yellow5 #fdfa72; /* Vibrant lemon yellow */
+
+/* Primary yellow shades */
+@define-color yellow1 #f9c70c; /* Deep golden yellow */
+@define-color yellow2 #fed000; /* Bright sunflower yellow */
+@define-color yellow3 #ffe338; /* Light yellow */
+@define-color yellow4 #f4bc1c; /* Warm golden yellow */
+
 
 @define-color orange_iron #ff9e64; 
+
+
+@define-color red1 #bc0404; /* Dark red */
+@define-color red2 #cc0000; /* Bright red */
+@define-color red3 #f44336; /* Standard red */
+@define-color red4 #ff564a; /* Light red */
+@define-color red5 #fc6a5f; /* Soft pinkish red */
+
+
+/* Red shades */
+@define-color full_red #ff0000; /* Full red */
+@define-color red_mid #ff4040;      /* Bright red */
+@define-color nice_red #080000; /* Deep, near-black red */
+
+
