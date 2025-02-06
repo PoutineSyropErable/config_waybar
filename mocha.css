@@ -25,7 +25,6 @@
 @define-color mantle #181825;
 @define-color crust #11111b;
 
-
 @define-color blue1 #e5e5ff;
 @define-color blue2 #7f7fff;
 @define-color blue3 #0000ff;
@@ -52,7 +51,6 @@
 @define-color sky_blue10 #005c6b;
 @define-color sky_blue11 #003d47;
 
-
 @define-color blue_gradient1 #89b4fa;
 @define-color blue_gradient2 #81b4fa;
 @define-color blue_gradient3 #79b4fa;
@@ -63,7 +61,6 @@
 @define-color blue_gradient8 #54b5fd;
 @define-color blue_gradient9 #4cb5fd;
 @define-color blue_gradient10 #45b6fe;
-
 
 /* 10-step gradient */
 @define-color blue_pink_grad1  #45b6fe; /* Start - Blue */
@@ -76,7 +73,6 @@
 @define-color blue_pink_grad8  #ec68d7;
 @define-color blue_pink_grad9  #f651cb;
 @define-color blue_pink_grad10 #ff4cc1; /* End - Pink */
-
 
 @define-color purple1 #d16aff;
 @define-color pink5 #ff4cc1;
@@ -92,7 +88,6 @@
 @define-color grad9 #ec8cb0;
 @define-color grad10 #f38ba8;
 
-
 @define-color pink_gradient1 #f38ba8;
 @define-color pink_gradient2 #f483aa;
 @define-color pink_gradient3 #f57dad;
@@ -105,17 +100,17 @@
 @define-color pink_gradient10 #ff4cc1;
 
 /* Pink shades */
-@define-color pink1 #fdeff7;    /* Very light pink */
-@define-color pink2 #ff62d1;    /* Vivid pink */
-@define-color pink3 #ffa4e9;    /* Light pink */
-@define-color pink4 #ff62d1;    /* Bright pink (same as pink2) */
-@define-color pink5 #ff4cc1;    /* Deep pink */
-@define-color pink6 #ffc0cb;    /* Soft pink */
-@define-color pink7 #ff0065;    /* Neon pink */
-@define-color pink8 #ff3377;    /* Rose pink */
-@define-color pink9 #ff3377;    /* Rose pink (same as pink8) */
-@define-color pink10 #ff77aa;   /* Warm pink */
-@define-color pink11 #ec3a8b;   /* Dark rose pink */
+@define-color pink1 #fdeff7; /* Very light pink */
+@define-color pink2 #ff62d1; /* Vivid pink */
+@define-color pink3 #ffa4e9; /* Light pink */
+@define-color pink4 #ff62d1; /* Bright pink (same as pink2) */
+@define-color pink5 #ff4cc1; /* Deep pink */
+@define-color pink6 #ffc0cb; /* Soft pink */
+@define-color pink7 #ff0065; /* Neon pink */
+@define-color pink8 #ff3377; /* Rose pink */
+@define-color pink9 #ff3377; /* Rose pink (same as pink8) */
+@define-color pink10 #ff77aa; /* Warm pink */
+@define-color pink11 #ec3a8b; /* Dark rose pink */
 
 /* Light yellow shades */
 @define-color light_yellow1 #fffee0; /* Very pale yellow */
@@ -130,9 +125,7 @@
 @define-color yellow3 #ffe338; /* Light yellow */
 @define-color yellow4 #f4bc1c; /* Warm golden yellow */
 
-
-@define-color orange_iron #ff9e64; 
-
+@define-color orange_iron #ff9e64;
 
 @define-color red1 #bc0404; /* Dark red */
 @define-color red2 #cc0000; /* Bright red */
@@ -140,10 +133,22 @@
 @define-color red4 #ff564a; /* Light red */
 @define-color red5 #fc6a5f; /* Soft pinkish red */
 
-
 /* Red shades */
 @define-color full_red #ff0000; /* Full red */
-@define-color red_mid #ff4040;      /* Bright red */
+@define-color red_mid #ff4040; /* Bright red */
 @define-color nice_red #080000; /* Deep, near-black red */
 
+/* Green shades */
+@define-color full_green #00ff00; /* Full green */
+@define-color nice_green #008000; /* Deep green */
+@define-color mint #00a170; /* Mint green */
+@define-color dark_mint #178a52; /* Dark mint green */
+@define-color forrest_green #228b22; /* Forrest green */
+@define-color green_ #228b22; /* Renamed 'green' */
 
+@define-color green1 #00df00; /* Bright neon green */
+@define-color green2 #00c535; /* Slightly darker neon green */
+@define-color green3 #25ff00; /* Vibrant green */
+@define-color green4 #00d83a; /* Darker bright green */
+@define-color green5 #00a12b; /* Dark forest green */
+@define-color matrix_green #00ff41; /* Classic matrix green */

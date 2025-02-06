@@ -1,73 +1,79 @@
 {
-	"position": "bottom",
-	"modules-left": ["network"],
-	"modules-center": [ "custom/kbd_backlight", "backlight" ],
-	"modules-right": [ "battery" ],
-	// "output": "eDP-1",
+    "position": "bottom",
+    "modules-left": ["network"],
+    "modules-center": ["custom/kbd_backlight", "backlight"],
+    "modules-right": ["battery"],
+    // "output": "eDP-1",
 
-	"battery": {
-		"states": {
-			"mid": 50,
-			"warning": 30,
-			"critical": 15
-		},
-		// "format-plugged": 	"<span size='13000' foreground='#7cc7e9'> </span>{capacity}% {time}",
-		"format-time": "  |  {H}:{m}m",
-		"format-alt": 		"<span size='13000' foreground='#0000ff'>{icon} </span> {time}",
-		"format-charging": 	"<span size='13000' foreground='#003fbf'> </span>{capacity}% {time}",
-		"format-plugged": 	"<span size='13000' foreground='#007f7f'> </span>{capacity}% {time}",
-		"format-full": 		"<span size='13000' foreground='#04d9ff'> </span>{capacity}%",
-		"format": 			"<span size='13000' foreground='#45b6fe'>{icon} </span> {capacity}% {time}",
-		"format-mid": 		"<span size='13000' foreground='#94a1f5'>{icon} </span> {capacity}% {time}",
-		"format-warning": 	"<span size='13000' foreground='#ec68d7'>{icon} </span> {capacity}% {time}",
-		"format-critical": 	"<span size='13000' foreground='#ff4cc1'>{icon} </span> {capacity}% {time}",
-		"format-icons": ["", "", "", "", ""],
-		"tooltip-format": "{time}"
-	},
+    "custom/gpu_mem": {
+        "exec": "fish -c 'pv $HOME/.config/polybar.old/polybar-radeontop/radeontop.py'",
+        "interval": 5,
+        "format": "<span foreground='#00ff00'>󰍛 GPU MEM: </span>{}",
+        "tooltip": false,
+    },
 
-	"backlight": {
-		"device": "intel_backlight",
-		"format": "{icon}  {percent}% ",
-		"format-icons": ["", "󰛨 "]
-	},
+    "battery": {
+        "states": {
+            "mid": 50,
+            "warning": 30,
+            "critical": 15,
+        },
+        // "format-plugged": 	"<span size='13000' foreground='#7cc7e9'> </span>{capacity}% {time}",
+        "format-time": "  |  {H}:{m}m",
+        "format-alt": "<span size='13000' foreground='#0000ff'>{icon} </span> {time}",
+        "format-charging": "<span size='13000' foreground='#003fbf'> </span>{capacity}% {time}",
+        "format-plugged": "<span size='13000' foreground='#007f7f'> </span>{capacity}% {time}",
+        "format-full": "<span size='13000' foreground='#04d9ff'> </span>{capacity}%",
+        "format": "<span size='13000' foreground='#45b6fe'>{icon} </span> {capacity}% {time}",
+        "format-mid": "<span size='13000' foreground='#94a1f5'>{icon} </span> {capacity}% {time}",
+        "format-warning": "<span size='13000' foreground='#ec68d7'>{icon} </span> {capacity}% {time}",
+        "format-critical": "<span size='13000' foreground='#ff4cc1'>{icon} </span> {capacity}% {time}",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip-format": "{time}",
+    },
 
-	"custom/kbd_backlight": {
-		"exec": "/home/francois/.config/waybar/scripts/waybar_keyboard_light.sh",
-		"format": "   {}",
-		"interval": 1,
-		"tooltip": true
-	},
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon}  {percent}% ",
+        "format-icons": ["", "󰛨 "],
+    },
 
+    "custom/kbd_backlight": {
+        "exec": "/home/francois/.config/waybar/scripts/waybar_keyboard_light.sh",
+        "format": "   {}",
+        "interval": 1,
+        "tooltip": true,
+    },
 
-	"network": {
-		"format-wifi": "<span size='13000' foreground='#f4bc1c'>  </span>{essid}  |  <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
-		"format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰤭  </span> Disconnected",
-		"format-linked": "{ifname} (No IP) ",
-		"format-disconnected": "<span size='13000' foreground='#f4bc1c'>  </span>Disconnected",
-		"tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
-	},
+    "network": {
+        "format-wifi": "<span size='13000' foreground='#f4bc1c'>  </span>{essid}  |  <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
+        "format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰤭  </span> Disconnected",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "<span size='13000' foreground='#f4bc1c'>  </span>Disconnected",
+        "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
+    },
 
-	// "network": {
-	// 	"interface": "wlan0",
-	// 	"family": "ipv4",
-	// 	"format": "{ipaddr}",
-	// 	"format-ethernet": "󰀂  {ipaddr}/{cidr}",
-	// 	"format-disconnected": "Disconnected",
-	// 	"tooltip-format": "Interface: {ifname} | IP: {ipaddr} | Gateway: {gwaddr}",
-	// 	"max-length": 50
-	// },
+    // "network": {
+    // 	"interface": "wlan0",
+    // 	"family": "ipv4",
+    // 	"format": "{ipaddr}",
+    // 	"format-ethernet": "󰀂  {ipaddr}/{cidr}",
+    // 	"format-disconnected": "Disconnected",
+    // 	"tooltip-format": "Interface: {ifname} | IP: {ipaddr} | Gateway: {gwaddr}",
+    // 	"max-length": 50
+    // },
 
-	"mpris": {
-		"interval": 1,
-		"format": "{player_icon} {dynamic}",
-		"format-paused": "{status_icon} <i>{dynamic}</i>",
-		"player-icons": {
-			"default": "▶",
-			"mpv": "🎵"
-		},
-		"status-icons": {
-			"paused": "⏸"
-		},
-		// "ignored-players": ["firefox"]
-	},
+    "mpris": {
+        "interval": 1,
+        "format": "{player_icon} {dynamic}",
+        "format-paused": "{status_icon} <i>{dynamic}</i>",
+        "player-icons": {
+            "default": "▶",
+            "mpv": "🎵",
+        },
+        "status-icons": {
+            "paused": "⏸",
+        },
+        // "ignored-players": ["firefox"]
+    },
 }

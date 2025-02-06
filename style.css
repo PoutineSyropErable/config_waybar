@@ -1,10 +1,10 @@
-@import 'mocha.css';
+@import "mocha.css";
 
 * {
-	font-family: 'MesloLGS Nerd Font Mono Bold';
-	font-size: 14px;
-	min-height: 0;
-	font-weight: bold;
+    font-family: "MesloLGS Nerd Font Mono Bold";
+    font-size: 14px;
+    min-height: 0;
+    font-weight: bold;
 }
 
 /* window#waybar { */
@@ -17,64 +17,65 @@
 /* } */
 
 window#waybar {
-	background: transparent; /* Ensures the bar itself is transparent */
-	color: @overlay0; /* Keeps the text color for consistency */
-	transition-property: background-color;
-	transition-duration: 0.1s;
-	border-bottom: none; /* Remove the border if you don’t want a full-width underline */
+    background: transparent; /* Ensures the bar itself is transparent */
+    color: @overlay0; /* Keeps the text color for consistency */
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    border-bottom: none; /* Remove the border if you don’t want a full-width underline */
 }
 
 #clock,
 #network,
 #mpris,
+#mpd,
 #backlight,
 #custom-kbd_backlight,
 #battery {
-	background-color: @crust;
-	color: @overlay0;
-	padding-left: 3px;
-	padding-right: 3px;
-	margin: 4px 10px; /* Space between other modules */
-	border-bottom: 2px solid @overlay1; /* Optional: underlines individual modules */
-	border-radius: 8px; /* Optional: adds rounded corners for a floating look */
+    background-color: @crust;
+    color: @overlay0;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 4px 10px; /* Space between other modules */
+    border-bottom: 2px solid @overlay1; /* Optional: underlines individual modules */
+    border-radius: 8px; /* Optional: adds rounded corners for a floating look */
 }
 
 #window {
-	margin: 8px;
-	padding-left: 8;
-	padding-right: 8;
+    margin: 8px;
+    padding-left: 8;
+    padding-right: 8;
 }
 
 button {
-	box-shadow: inset 0 -3px transparent;
-	border: none;
-	border-radius: 0;
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
 }
 
 button:hover {
-	background: inherit;
-	color: @mauve;
-	border-top: 2px solid @mauve;
+    background: inherit;
+    color: @mauve;
+    border-top: 2px solid @mauve;
 }
 
 #workspaces button {
-	padding: 0 4px;
+    padding: 0 4px;
 }
 
 #workspaces button.focused {
-	background-color: rgba(0, 0, 0, 0.3);
-	color: @rosewater;
-	border-top: 2px solid @rosewater;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @rosewater;
+    border-top: 2px solid @rosewater;
 }
 
 #workspaces button.active {
-	background-color: rgba(0, 0, 0, 0.3);
-	color: @mauve;
-	border-top: 2px solid @mauve;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @mauve;
+    border-top: 2px solid @mauve;
 }
 
 #workspaces button.urgent {
-	background-color: #eb4d4b;
+    background-color: #eb4d4b;
 }
 
 #pulseaudio,
@@ -90,136 +91,220 @@ button:hover {
 #network,
 #mode,
 #scratchpad {
-	margin-top: 2px;
-	margin-bottom: 2px;
-	margin-left: 4px;
-	margin-right: 4px;
-	padding-left: 4px;
-	padding-right: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #clock {
-	color: @maroon;
-	border-bottom: 2px solid @maroon;
+    color: @maroon;
+    border-bottom: 2px solid @maroon;
 }
 
 #clock.date {
-	color: @mauve;
-	border-bottom: 2px solid @mauve;
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
 }
 
 #pulseaudio {
-	color: @blue;
-	border-bottom: 2px solid @blue;
+    color: @blue;
+    border-bottom: 2px solid @blue;
 }
 
 #network {
-	color: @light_yellow5;
-	border-bottom: 2px solid @yellow4;
-	padding-left: 3px;
-	padding-right: 3px;
-	margin: 4px 10px; /* Space between modules */
+    color: @light_yellow5;
+    border-bottom: 2px solid @yellow4;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 4px 10px; /* Space between modules */
 }
 
 #idle_inhibitor {
-	margin-right: 12px;
-	color: #7cb342;
+    margin-right: 12px;
+    color: #7cb342;
 }
 
 #idle_inhibitor.activated {
-	color: @red;
+    color: @red;
 }
 
 #battery {
-	color: @sky_blue4;
-	border-bottom: 2px solid @blue_gradient8;
+    color: @sky_blue4;
+    border-bottom: 2px solid @blue_gradient8;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-	margin-left: 0;
+    margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
-	margin-right: 0;
+    margin-right: 0;
 }
 
 #custom-vpn {
-	color: @lavender;
-	border-radius: 15px;
-	padding-left: 6px;
-	padding-right: 6px;
+    color: @lavender;
+    border-radius: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 #mpris {
-	color: @rosewater;
-	padding-left: 3px;
-	padding-right: 3px;
-	margin: 4px 10px;
-	font-weight: bold;
-	border-bottom: 2px solid @overlay0;
+    color: @rosewater;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 4px 10px;
+    font-weight: bold;
+    border-bottom: 2px solid @overlay0;
 }
 
 #mpris.playing {
-	color: @green;
-	border-bottom: 2px solid @green;
+    color: @green;
+    border-bottom: 2px solid @green;
 }
 
 #mpris.paused {
-	color: @peach;
-	border-bottom: 2px solid @peach;
-	font-style: italic;
+    color: @peach;
+    border-bottom: 2px solid @peach;
+    font-style: italic;
 }
 
 #mpris.stopped {
-	color: @overlay2;
-	border-bottom: 2px solid @overlay2;
+    color: @overlay2;
+    border-bottom: 2px solid @overlay2;
 }
 
 #mpris:hover {
-	color: @mauve;
-	border-bottom: 2px solid @mauve;
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
 }
 
 #mpris .player-icon {
-	color: @blue;
+    color: @blue;
 }
 
 #mpris .status-icon {
-	color: @flamingo;
+    color: @flamingo;
 }
 
 #mpris .dynamic {
-	color: @teal;
+    color: @teal;
+}
+
+#mpd {
+    color: @rosewater;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 4px 10px;
+    font-weight: bold;
+    border-bottom: 2px solid @overlay0;
+}
+
+#mpd.playing {
+    color: @green;
+    border-bottom: 2px solid @green;
+}
+
+#mpd.paused {
+    color: @peach;
+    border-bottom: 2px solid @peach;
+    font-style: italic;
+}
+
+#mpd.stopped {
+    color: @overlay2;
+    border-bottom: 2px solid @overlay2;
+}
+
+#mpd.disconnected {
+    color: #ff5555;
+    border-bottom: 2px solid #ff5555;
+}
+
+#mpd:hover {
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
+}
+
+#mpd .state-icon {
+    color: @blue;
+}
+
+#mpd .repeat-icon {
+    color: @flamingo;
+}
+
+#mpd .random-icon {
+    color: @teal;
+}
+
+#mpd .single-icon {
+    color: @yellow;
 }
 
 #custom-kbd_backlight {
-	background-color: @base; /* Base background color */
-	color: @blue_gradient7; /* Text color */
-	padding-left: 3px;
-	padding-right: 3px;
-	margin: 4px 10px; /* Space between other modules */
-	border-bottom: 2px solid @blue_gradient7; /* Underline for emphasis */
+    background-color: @base; /* Base background color */
+    color: @blue_gradient7; /* Text color */
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 4px 10px; /* Space between other modules */
+    border-bottom: 2px solid @blue_gradient7; /* Underline for emphasis */
 }
 
 #custom-kbd_backlight:hover {
-	background-color: @blue_gradient7; /* Highlight on hover */
-	color: @base; /* Text contrast on hover */
-	border-bottom: 2px solid @blue_gradient7; /* Keeps underline consistent */
+    background-color: @blue_gradient7; /* Highlight on hover */
+    color: @base; /* Text contrast on hover */
+    border-bottom: 2px solid @blue_gradient7; /* Keeps underline consistent */
 }
 
 #backlight {
-	background-color: @base; /* Matches the base theme */
-	color: @yellow; /* Text color */
-	padding-left: 3px;
-	padding-right: 3px;
-	margin: 4px 10px; /* Space between modules */
-	border-bottom: 2px solid @yellow; /* Underline with a blue accent */
+    background-color: @base; /* Matches the base theme */
+    color: @yellow; /* Text color */
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 4px 10px; /* Space between modules */
+    border-bottom: 2px solid @yellow; /* Underline with a blue accent */
 }
 
 #backlight:hover {
-	background-color: @yellow; /* Highlight on hover */
-	color: @base; /* Contrast for text */
-	border-bottom: 2px solid @yellow; /* Keeps underline consistent */
+    background-color: @yellow; /* Highlight on hover */
+    color: @base; /* Contrast for text */
+    border-bottom: 2px solid @yellow; /* Keeps underline consistent */
+}
+
+#custom-gpu {
+    background-color: @crust;
+    color: @red2; /* Red foreground */
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 4px 10px; /* Space between other modules */
+    border-bottom: 2px solid @red3; /* Dark red underline */
+    border-radius: 8px; /* Rounded corners */
+    font-weight: bold;
+}
+
+#custom-gpu_mem {
+    background-color: @crust;
+    color: #00ff00;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 4px 10px; /* Space between other modules */
+    border-bottom: 2px solid @matrix_green; /* Dark orange underline */
+    border-radius: 8px; /* Rounded corners */
+    font-weight: bold;
+}
+
+#custom-gpu_temp {
+    background-color: @crust;
+    color: @sky_blue7; /* Matches yellow2 from your theme */
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 4px 10px;
+    border-bottom: 2px solid @dodger_blue;
+    border-radius: 8px;
+    font-weight: bold;
 }
