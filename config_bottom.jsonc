@@ -5,7 +5,7 @@
     "modules-right": [
         "custom/gpu",
         "custom/gpu_mem",
-        "custom/gpu_temp",
+        "custom/gpu_temp_laptop",
         "network",
     ],
     "output": ["DP-1", "HDMI-A-1"],

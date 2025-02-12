@@ -132,6 +132,7 @@
 @define-color red3 #f44336; /* Standard red */
 @define-color red4 #ff564a; /* Light red */
 @define-color red5 #fc6a5f; /* Soft pinkish red */
+@define-color red6 #ff2424;
 
 /* Red shades */
 @define-color full_red #ff0000; /* Full red */

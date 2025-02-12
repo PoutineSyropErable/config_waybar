@@ -2,13 +2,47 @@
     "position": "bottom",
     "modules-left": ["network"],
     "modules-center": ["custom/kbd_backlight", "backlight"],
-    "modules-right": ["battery"],
-    // "output": "eDP-1",
+    "modules-right": [
+        "custom/gpu",
+        "custom/gpu_temp_laptop",
+        "custom/gpu_mem",
+        "battery",
+    ],
+
+    // "custom/gpu_mem": {
+    //     "exec": "echo \"$(( $(cat /sys/class/drm/card1/device/mem_info_vram_used) / 1024 / 1024 )) MB\"",
+    //     "interval": 5,
+    //     "format": "<span foreground='#00ff00'>󰍛 GPU MEM: </span>{}",
+    //     "tooltip": false,
+    // },
+
+    // "custom/gpu": {
+    //     "exec": "cat /sys/class/drm/card1/device/gpu_busy_percent",
+    //     "interval": 2,
+    //     "format": "<span foreground='#ff2424'>󰍛 GPU:</span> {}%",
+    //     "tooltip": false,
+    // },
 
     "custom/gpu_mem": {
-        "exec": "fish -c 'pv $HOME/.config/polybar.old/polybar-radeontop/radeontop.py'",
+        "exec": "echo \"$(( $(cat /sys/class/drm/card1/device/mem_info_vram_used) / 1024 / 1024 )) MB\"",
         "interval": 5,
-        "format": "<span foreground='#00ff00'>󰍛 GPU MEM: </span>{}",
+        "format": "<span foreground='#00cc00'> </span> <span foreground='#00ff00'>GPU MEM:</span> {}",
+        "tooltip": false,
+    },
+
+    "custom/gpu": {
+        "exec": "cat /sys/class/drm/card1/device/gpu_busy_percent",
+        "interval": 2,
+        "format": "<span foreground='#cc1e1e'>󰍛 </span> <span foreground='#ff2424'>GPU:</span> {}%",
+        "tooltip": false,
+    },
+
+    "custom/gpu_temp_laptop": {
+        "exec": "sensors | grep 'amdgpu-pci-0400' -A 4 | grep 'edge' | awk '{ print $2 }' | tr -d '+'",
+        "interval": 2,
+        // "format": "<span foreground='#f9c70c'>  GPU Temp:</span> {}°C",
+        "format": "<span foreground='#f4bc1c'> </span> <span foreground='#ffe338'>GPU Temp:</span> {}°C",
+
         "tooltip": false,
     },
 
