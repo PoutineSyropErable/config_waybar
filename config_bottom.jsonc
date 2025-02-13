@@ -1,13 +1,8 @@
 {
     "position": "bottom",
     "modules-left": ["mpd"],
-    "modules-center": [],
-    "modules-right": [
-        "custom/gpu",
-        "custom/gpu_mem",
-        "custom/gpu_temp_laptop",
-        "network",
-    ],
+    "modules-right": ["network"],
+    "modules-center": ["custom/gpu", "custom/gpu_mem", "custom/gpu_temp"],
     "output": ["DP-1", "HDMI-A-1"],
 
     "custom/gpu_mem": {

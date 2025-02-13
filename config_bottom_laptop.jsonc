@@ -1,13 +1,13 @@
 {
     "position": "bottom",
     "modules-left": ["network"],
-    "modules-center": ["custom/kbd_backlight", "backlight"],
-    "modules-right": [
+    "modules-center": [
         "custom/gpu",
         "custom/gpu_temp_laptop",
         "custom/gpu_mem",
         "battery",
     ],
+    "modules-right": ["custom/kbd_backlight", "backlight"],
 
     // "custom/gpu_mem": {
     //     "exec": "echo \"$(( $(cat /sys/class/drm/card1/device/mem_info_vram_used) / 1024 / 1024 )) MB\"",
