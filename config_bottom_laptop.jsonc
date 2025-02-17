@@ -80,12 +80,21 @@
     },
 
     "network": {
-        "format-wifi": "<span size='13000' foreground='#f4bc1c'>  </span>{essid}  |  <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
-        "format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰤭  </span> Disconnected",
+        "format-wifi": "<span size='13000' foreground='#f4bc1c'>  </span>{essid}  |  <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr} |  {bandwidthUpBits}    {bandwidthDownBits}",
+        "format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰤭  </span>Connected | 󰛳 {bandwidthUpBits}  {bandwidthDownBits}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "<span size='13000' foreground='#f4bc1c'>  </span>Disconnected",
-        "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
+        "tooltip-format-wifi": "Signal Strength: {signalStrength}%\nUpload: {bandwidthUpBits}\nDownload: {bandwidthDownBits}",
+        "interval": 1,
     },
+
+    // "network": {
+    //     "format-wifi": "<span size='13000' foreground='#f4bc1c'>  </span>{essid}  |  <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
+    //     "format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰤭  </span> Disconnected",
+    //     "format-linked": "{ifname} (No IP) ",
+    //     "format-disconnected": "<span size='13000' foreground='#f4bc1c'>  </span>Disconnected",
+    //     "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
+    // },
 
     // "network": {
     // 	"interface": "wlan0",
