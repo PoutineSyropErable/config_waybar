@@ -1,8 +1,8 @@
 {
     "position": "bottom",
-    "modules-left": ["mpd"],
-    "modules-right": ["network"],
-    "modules-center": ["custom/gpu", "custom/gpu_mem", "custom/gpu_temp"],
+    "modules-left": ["network#internet", "network#speed"],
+    "modules-center": ["mpd"],
+    "modules-right": ["custom/gpu", "custom/gpu_mem", "custom/gpu_temp"],
     "output": ["DP-1", "HDMI-A-1"],
 
     "custom/gpu_mem": {
@@ -24,6 +24,22 @@
         "interval": 2,
         "format": "<span foreground='#04d9ff'>  GPU Temp:</span> {}°C",
         "tooltip": false,
+    },
+
+    "network#internet": {
+        "type": "network",
+        "interface": "enp14s0",
+        "format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
+        "format-linked": "<span size='13000' foreground='#f4bc1c'>󰌙 </span> No IP",
+        "format-disconnected": "<span size='13000' foreground='#f4bc1c'> </span> Disconnected",
+    },
+
+    "network#speed": {
+        "type": "network",
+        "interface": "enp14s0",
+        "format": "<span foreground='#00ff00'> {bandwidthUpBits} </span> <span foreground='#ff4444'> {bandwidthDownBits}</span>",
+        "tooltip": false,
+        "interval": 1,
     },
 
     "network": {
@@ -68,10 +84,10 @@
 
     "mpd": {
         "interval": 1,
-        "format": "{stateIcon} {artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
-        "format-paused": "{stateIcon} <i>{artist} - {title}</i> ({elapsedTime:%M:%S}/{totalTime:%M:%S})  ",
-        "format-stopped": "Stopped ",
-        "format-disconnected": "Disconnected ",
+        "format": "{stateIcon} {artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) (MPD)   ",
+        "format-paused": "{stateIcon} <i>{artist} - {title}</i> ({elapsedTime:%M:%S}/{totalTime:%M:%S}) (MPD)  ",
+        "format-stopped": "Stopped (MPD)  ",
+        "format-disconnected": "Disconnected (MPD)  ",
         "state-icons": {
             "playing": "▶",
             "paused": "⏸",

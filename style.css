@@ -1,7 +1,7 @@
-@import 'mocha.css';
+@import "mocha.css";
 
 * {
-    font-family: 'MesloLGS Nerd Font Mono Bold';
+    font-family: "MesloLGS Nerd Font Mono Bold";
     font-size: 14px;
     min-height: 0;
     font-weight: bold;
@@ -112,6 +112,13 @@ button:hover {
 #pulseaudio {
     color: @blue;
     border-bottom: 2px solid @blue;
+}
+#network {
+    color: @light_yellow5;
+    border-bottom: 2px solid @yellow4;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 4px 10px; /* Space between modules */
 }
 
 #network.internet {
