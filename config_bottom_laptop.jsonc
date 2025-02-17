@@ -1,6 +1,6 @@
 {
     "position": "bottom",
-    "modules-left": ["network"],
+    "modules-left": ["network#internet", "network#speed"],
     "modules-center": ["custom/kbd_backlight", "backlight"],
     "modules-right": [
         "custom/gpu",
@@ -79,9 +79,27 @@
         "tooltip": true,
     },
 
+    "network#internet": {
+        "type": "network",
+        "interface": "wlan0",
+        "format-wifi": "<span size='13000' foreground='#f4bc1c'>  </span>{essid} | <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
+        "format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰤭  </span>Connected | <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "<span size='13000' foreground='#f4bc1c'>  </span>Disconnected",
+        "tooltip-format-wifi": "Signal Strength: {signalStrength}%",
+    },
+
+    "network#speed": {
+        "type": "network",
+        "interface": "wlan0",
+        "format": "<span foreground='#00ff00'> {bandwidthUpBits} </span> <span foreground='#ff4444'> {bandwidthDownBits}</span>",
+        "tooltip": false,
+        "interval": 1,
+    },
+
     "network": {
-        "format-wifi": "<span size='13000' foreground='#f4bc1c'>  </span>{essid}  |  <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr} |  {bandwidthUpBits}    {bandwidthDownBits}",
-        "format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰤭  </span>Connected | 󰛳 {bandwidthUpBits}  {bandwidthDownBits}",
+        "format-wifi": "<span size='13000' foreground='#f4bc1c'>  </span>{essid}  |  <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr} | <span foreground='#00ff00'></span> {bandwidthUpBits}  <span foreground='#ff4444'></span> {bandwidthDownBits}",
+        "format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰤭  </span>Connected | <span foreground='#00ff00'></span> {bandwidthUpBits}  <span foreground='#ff4444'></span> {bandwidthDownBits}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "<span size='13000' foreground='#f4bc1c'>  </span>Disconnected",
         "tooltip-format-wifi": "Signal Strength: {signalStrength}%\nUpload: {bandwidthUpBits}\nDownload: {bandwidthDownBits}",

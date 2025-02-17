@@ -114,13 +114,37 @@ button:hover {
     border-bottom: 2px solid @blue;
 }
 
-#network {
+#network.internet {
     color: @light_yellow5;
     border-bottom: 2px solid @yellow4;
     padding-left: 3px;
     padding-right: 3px;
     margin: 4px 10px; /* Space between modules */
 }
+
+#network.speed {
+    color: @light_yellow1;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(
+        90deg,
+        #33ff33 0%,
+        #33ff33 49%,
+        /* #ffff33 49%, */ #ff3333 50%,
+        #ff3333 100%
+    );
+    border-image-slice: 1;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 4px 10px; /* Space between modules */
+}
+
+/* #network.speed { */
+/*     color: @light_yellow1; */
+/*     border-bottom: 2px solid @subtext0; */
+/*     padding-left: 3px; */
+/*     padding-right: 3px; */
+/*     margin: 4px 10px; /1* Space between modules *1/ */
+/* } */
 
 #idle_inhibitor {
     margin-right: 12px;
