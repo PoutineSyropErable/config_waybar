@@ -1,13 +1,19 @@
 {
     "position": "bottom",
+<<<<<<< HEAD
+    "modules-left": ["network"],
+    "modules-center": [
+=======
     "modules-left": ["network#internet", "network#speed"],
     "modules-center": ["custom/kbd_backlight", "backlight"],
     "modules-right": [
+>>>>>>> e645c2dbdd474ac729f9db9ca9fcdaac6d78ff70
         "custom/gpu",
         "custom/gpu_temp_laptop",
         "custom/gpu_mem",
         "battery",
     ],
+    "modules-right": ["custom/kbd_backlight", "backlight"],
 
     // "custom/gpu_mem": {
     //     "exec": "echo \"$(( $(cat /sys/class/drm/card1/device/mem_info_vram_used) / 1024 / 1024 )) MB\"",
