@@ -30,6 +30,21 @@ window#waybar {
 #mpd,
 #backlight,
 #custom-kbd_backlight,
+#pulseaudio,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#wireplumber,
+#tray,
+#network,
+#mode,
+
+/* Spaces for definition */
+
 #battery {
     background-color: @crust;
     color: @overlay0;
@@ -78,18 +93,6 @@ button:hover {
     background-color: #eb4d4b;
 }
 
-#pulseaudio,
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#wireplumber,
-#tray,
-#network,
-#mode,
 #scratchpad {
     margin-top: 2px;
     margin-bottom: 2px;
@@ -236,14 +239,19 @@ button:hover {
 }
 
 #mpd.playing {
-    color: @green;
+    color: @maroon;
     border-bottom: 2px solid @green;
 }
 
 #mpd.paused {
-    color: @peach;
+    color: @mauve;
     border-bottom: 2px solid @peach;
     font-style: italic;
+}
+
+#mpd:hover {
+    color: @red;
+    border-bottom: 2px solid @mauve;
 }
 
 #mpd.stopped {
@@ -254,11 +262,6 @@ button:hover {
 #mpd.disconnected {
     color: #ff5555;
     border-bottom: 2px solid #ff5555;
-}
-
-#mpd:hover {
-    color: @mauve;
-    border-bottom: 2px solid @mauve;
 }
 
 #mpd .state-icon {
@@ -347,6 +350,17 @@ button:hover {
     padding-right: 4px;
     margin: 4px 10px;
     border-bottom: 2px solid @yellow4;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#custom-mpd_volume {
+    background-color: @crust;
+    color: @pink5; /* Matches yellow2 from your theme */
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 4px 10px;
+    border-bottom: 2px solid @purple1;
     border-radius: 8px;
     font-weight: bold;
 }

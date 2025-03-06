@@ -1,7 +1,7 @@
 {
     "position": "bottom",
     "modules-left": ["network#internet", "network#speed"],
-    "modules-center": ["mpd"],
+    "modules-center": ["mpd", "custom/mpd_volume"],
     "modules-right": ["custom/gpu", "custom/gpu_mem", "custom/gpu_temp"],
     "output": ["DP-1", "HDMI-A-1"],
 
@@ -73,11 +73,11 @@
         "format": "{player_icon} {dynamic}",
         "format-paused": "{status_icon} <i>{dynamic}</i>",
         "player-icons": {
-            "default": "▶",
+            "default": "⏸",
             "mpv": "🎵",
         },
         "status-icons": {
-            "paused": "⏸",
+            "paused": "▶",
         },
         // "ignored-players": ["firefox"]
     },
@@ -89,8 +89,8 @@
         "format-stopped": "Stopped (MPD)  ",
         "format-disconnected": "Disconnected (MPD)  ",
         "state-icons": {
-            "playing": "▶",
-            "paused": "⏸",
+            "playing": "⏸",
+            "paused": "▶",
         },
         "repeat-icons": {
             "on": "🔁",
@@ -109,5 +109,12 @@
         "on-click": "mpc toggle",
         "on-scroll-up": "mpc volume +5",
         "on-scroll-down": "mpc volume -5",
+    },
+
+    "custom/mpd_volume": {
+        "exec": "/home/francois/.config/polybar.old/tmux/volume.sh",
+        "interval": 2,
+        "format": "<span foreground='#f57dad'> MPC  : </span> {}",
+        "tooltip": false,
     },
 }
