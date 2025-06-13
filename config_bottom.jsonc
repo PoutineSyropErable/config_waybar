@@ -1,6 +1,7 @@
 {
     "position": "bottom",
-    "modules-left": ["network#internet", "network#speed"],
+    "modules-left": ["network#wifi", "network#speed"],
+    // "modules-left": ["network#internet", "network#speed"],
     "modules-center": ["mpd", "custom/mpd_volume"],
     "modules-right": ["custom/gpu", "custom/gpu_mem", "custom/gpu_temp"],
     "output": ["DP-1", "HDMI-A-1"],
@@ -32,6 +33,16 @@
         "format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
         "format-linked": "<span size='13000' foreground='#f4bc1c'>󰌙 </span> No IP",
         "format-disconnected": "<span size='13000' foreground='#f4bc1c'> </span> Disconnected",
+    },
+
+    "network#wifi": {
+        "type": "network",
+        "interface": "wlan0",
+        "format-wifi": "<span size='13000' foreground='#f4bc1c'>  </span>{essid} | <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
+        "format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰤭  </span>Connected | <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "<span size='13000' foreground='#f4bc1c'>  </span>Disconnected",
+        "tooltip-format-wifi": "Signal Strength: {signalStrength}%",
     },
 
     "network#speed": {
