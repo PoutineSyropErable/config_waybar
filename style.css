@@ -364,3 +364,20 @@ button:hover {
     border-radius: 8px;
     font-weight: bold;
 }
+
+#custom-keybinds {
+    background-color: @crust;
+    color: @overlay1;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin: 4px 10px;
+    border-bottom: 2px solid @overlay2;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#custom-keybinds:hover {
+    color: @blue_pink_grad1;
+    /* background-color: @red1; */
+    border-bottom: 2px solid @blue2;
+}
