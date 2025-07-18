@@ -1,2 +1,5 @@
 ignored/
 waybar_toggle.sh
+machine_unique/**
+
+!/machine_unique/readme.md
