@@ -1,7 +1,7 @@
 {
     "position": "bottom",
-    "modules-left": ["network#wifi", "network#speed"],
-    // "modules-left": ["network#internet", "network#speed"],
+    // "modules-left": ["network#wifi", "network#speed"],
+    "modules-left": ["network#internet", "network#speed"],
     "modules-center": ["custom/keybinds", "mpd", "custom/mpd_volume"],
     "modules-right": ["custom/gpu", "custom/gpu_mem", "custom/gpu_temp"],
     "output": ["DP-1", "HDMI-A-1"],
