@@ -6,17 +6,58 @@
 
 	// "position": "bottom",
 	// "modules-left": ["mpris"],
-		// Bottom bar configuration
+	// Bottom bar configuration
+
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"on-click": "activate",
+		"format-icons": {
+			"1": "1: ",
+			"2": "2: ",
+			"3": "3: ",
+			"4": "4: ",
+			"5": "5:󰄨 ",
+			"6": "6: ",
+			"7": "7: ",
+			"8": "8: ",
+			"9": "9:󰊴 ",
+			"10": "10: ",
+			"11": "11: ",
+			"12": "12: ",
+			"13": "13: ",
+			"14": "14: ",
+			"15": "15:󰄨 ",
+			"16": "16: ",
+			"17": "17: ",
+			"18": "18: ",
+			"19": "19:󰯂 ",
+			"20": "20: ",
+			"21": "21: ",
+			"22": "22: ",
+			"23": "23: ",
+			"24": "24: ",
+			"25": "25:󰄨 ",
+			"26": "26: ",
+			"27": "27: ",
+			"28": "28: ",
+			"29": "29:󰯂 ",
+			"30": "30: ",
+			// "urgent": "",
+			// "active": "",
+			"default": "",
+		},
+		"sort-by-number": true,
+	},
 
 	"clock": {
 		"format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M:%S}",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-		"interval": 1
+		"interval": 1,
 	},
 	"battery": {
 		"states": {
 			"warning": 30,
-			"critical": 15
+			"critical": 15,
 		},
 		"format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
 		"format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
@@ -26,22 +67,22 @@
 		"format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
 		"format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
 		"format-icons": ["", "", "", "", ""],
-		"tooltip-format": "{time}"
+		"tooltip-format": "{time}",
 	},
 	"network": {
 		"format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
 		"format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
 		"format-linked": "{ifname} (No IP) ",
 		"format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
-		"tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
+		"tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
 	},
 	"pulseaudio": {
 		"format": "{icon}  {volume}%",
 		"format-muted": "",
 		"format-icons": {
-			"default": ["", "", " "]
+			"default": ["", "", " "],
 		},
-		"on-click": "pavucontrol"
+		"on-click": "pavucontrol",
 	},
 	"mpd": {
 		"format": " <span color=\"#42e5ff\">{filename}</span>   <span color=\"#ffc110\">  {stateIcon} {randomIcon}{repeatIcon}{singleIcon}{consumeIcon}  </span>   <span color=\"#ff4cc1\">({elapsedTime:%M:%S}/{totalTime:%M:%S})   {volume}%</span>  ",
@@ -50,25 +91,23 @@
 		"format-stopped": "Stopped   {consumeIcon} {randomIcon} {repeatIcon} {singleIcon} ",
 		"interval": 0.1,
 		"consume-icons": {
-			"on": " " // Icon shows only when "consume" is on
+			"on": " ", // Icon shows only when "consume" is on
 		},
 		"random-icons": {
 			"off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
-			"on": " "
+			"on": " ",
 		},
 		"repeat-icons": {
-			"on": " "
+			"on": " ",
 		},
 		"single-icons": {
-			"on": "1 "
+			"on": "1 ",
 		},
 		"state-icons": {
 			"paused": "",
-			"playing": ""
+			"playing": "",
 		},
 		"tooltip-format": "MPD (connected)",
-		"tooltip-format-disconnected": "MPD (disconnected)"
+		"tooltip-format-disconnected": "MPD (disconnected)",
 	},
-
-
 }
