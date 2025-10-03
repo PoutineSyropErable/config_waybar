@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Detect active device type (ethernet / wifi / default)
 active_dev_type=$(nmcli -t -f DEVICE,TYPE,STATE device status |
 	grep ':connected' |
 	grep -E 'ethernet|wifi' |
@@ -9,39 +10,48 @@ active_dev_type=$(nmcli -t -f DEVICE,TYPE,STATE device status |
 	sed 's/^[[:space:]]*//; s/[[:space:]]*$//' |
 	head -n1)
 
-config_wired="$HOME/.config/waybar/config_bottom_desktop_wired.jsonc"
-config_wifi="$HOME/.config/waybar/config_bottom_desktop_wifi.jsonc"
-config_default="$HOME/.config/waybar/config_bottom.jsonc"
+# Landscape configs
+config_wired_landscape="$HOME/.config/waybar/config_bottom_desktop_wired_landscape.jsonc"
+config_wifi_landscape="$HOME/.config/waybar/config_bottom_desktop_wifi_landscape.jsonc"
+config_default_landscape="$HOME/.config/waybar/config_bottom_landscape.jsonc"
 
-config_wired_portrait="$HOME/.config/waybar/config_bottom_desktop_wired.jsonc"
-config_wifi_portrait="$HOME/.config/waybar/config_bottom_desktop_wifi.jsonc"
-config_default_portrait="$HOME/.config/waybar/config_bottom.jsonc"
+# Portrait configs
+config_wired_portrait="$HOME/.config/waybar/config_bottom_desktop_wired_portrait.jsonc"
+config_wifi_portrait="$HOME/.config/waybar/config_bottom_desktop_wifi_portrait.jsonc"
+config_default_portrait="$HOME/.config/waybar/config_bottom_portrait.jsonc"
 
-# Select config file based on type
+# Pick config set based on network type
 if [[ "$active_dev_type" == "ethernet" ]]; then
-	config_file="$config_wired"
-	# notify-send "using eternet"
+	config_landscape="$config_wired_landscape"
+	config_portrait="$config_wired_portrait"
 elif [[ "$active_dev_type" == "wifi" ]]; then
-	config_file="$config_wifi"
-	# notify-send "using wifi"
+	config_landscape="$config_wifi_landscape"
+	config_portrait="$config_wifi_portrait"
 else
-	config_file="$config_default"
-	# notify-send "using default"
+	config_landscape="$config_default_landscape"
+	config_portrait="$config_default_portrait"
 fi
 
-# Check if either wired or wifi Waybar is running
-wired_running=$(pgrep -f "waybar -c $config_wired")
-wifi_running=$(pgrep -f "waybar -c $config_wifi")
-default_running=$(pgrep -f "waybar -c $config_default")
+# Detect DP-2 resolution
+transform=$(hyprctl monitors -j | jq -r '.[] | select(.name=="DP-2") | "\(.transform)"')
+# orientation = transform * 90 degree.
 
-if [[ -n "$wired_running" || -n "$wifi_running" || -n "$default_running" ]]; then
-	# Kill both if any is running
-	pkill -f "waybar -c $config_wired"
-	pkill -f "waybar -c $config_wifi"
-	pkill -f "waybar -c $config_default"
-	# Optional small delay to ensure processes exit
-	sleep 0.2
+if [[ -z "$transform" ]]; then
+	echo "❌ DP-2 not found"
+	exit 1
+fi
+
+# Kill existing Waybar
+pkill -f "waybar -c $config_landscape"
+pkill -f "waybar -c $config_portrait"
+sleep 0.2
+
+# Decide orientation
+
+if [[ "$transform" == "1" || "$transform" == "3" ]]; then
+	echo "📐 DP-2 is portrait , transform = $transform"
+	waybar -c "$config_portrait" &
 else
-	# Start Waybar with the right config
-	waybar -c "$config_file" &
+	echo "📐 DP-2 is landscape , transform = $transform"
+	waybar -c "$config_landscape" &
 fi
