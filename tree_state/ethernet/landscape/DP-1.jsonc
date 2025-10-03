@@ -1,0 +1,136 @@
+{
+    "position": "bottom",
+    // "modules-left": ["network#wifi", "network#speed"],
+    "modules-left": ["network#internet", "network#speed"],
+    "modules-center": ["custom/keybinds", "mpd", "custom/mpd_volume", "tray"],
+    "modules-right": ["custom/gpu", "custom/gpu_mem", "custom/gpu_temp"],
+    "output": ["DP-1"],
+    // "output": ["DP-1", "HDMI-A-1", "DP-2"],
+
+    "custom/gpu_mem": {
+        "exec": "echo \"$(( $(cat /sys/class/drm/card1/device/mem_info_vram_used) / 1024 / 1024 )) MB\"",
+        "interval": 5,
+        "format": "<span foreground='#00ff00'>󰍛 GPU MEM: </span>{}",
+        "tooltip": false,
+    },
+
+    "custom/gpu": {
+        "exec": "cat /sys/class/drm/card1/device/gpu_busy_percent",
+        "interval": 2,
+        "format": "<span foreground='#ff2424'>󰍛 GPU:</span> {}%",
+        "tooltip": false,
+    },
+
+    "custom/gpu_temp": {
+        "exec": "sensors | grep 'amdgpu-pci-1200' -A 4 | grep 'edge' | awk '{ print $2 }' | tr -d '+'",
+        "interval": 2,
+        "format": "<span foreground='#04d9ff'>  GPU Temp:</span> {}°C",
+        "tooltip": false,
+    },
+
+    "network#internet": {
+        "type": "network",
+        "interface": "enp14s0",
+        "format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
+        "format-linked": "<span size='13000' foreground='#f4bc1c'>󰌙 </span> No IP",
+        "format-disconnected": "<span size='13000' foreground='#f4bc1c'> </span> Disconnected",
+    },
+
+    "network#wifi": {
+        "type": "network",
+        "interface": "wlan0",
+        "format-wifi": "<span size='13000' foreground='#f4bc1c'>  </span>{essid} | <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
+        "format-ethernet": "<span size='13000' foreground='#f4bc1c'>󰤭  </span>Connected | <span size='13000' foreground='#f4bc1c'>󰀂 </span> {ipaddr}/{cidr}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "<span size='13000' foreground='#f4bc1c'>  </span>Disconnected",
+        "tooltip-format-wifi": "Signal Strength: {signalStrength}%",
+    },
+
+    "network#speed": {
+        "type": "network",
+        "interface": "enp14s0",
+        "format": "<span foreground='#00ff00'> {bandwidthUpBits} </span> <span foreground='#ff4444'> {bandwidthDownBits}</span>",
+        "tooltip": false,
+        "interval": 1,
+    },
+
+    "network": {
+        "interface": "enp14s0",
+        "family": "ipv4",
+        "format": "{ipaddr}",
+        "format-ethernet": "󰀂  {ipaddr}/{cidr}",
+        "format-disconnected": "Disconnected",
+        "tooltip-format": "Interface: {ifname} | IP: {ipaddr} | Gateway: {gwaddr}",
+        "max-length": 50,
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15,
+        },
+        "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
+        "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
+        "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
+        "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+        "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+        "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
+        "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip-format": "{time}",
+    },
+
+    "mpris": {
+        "interval": 1,
+        "format": "{player_icon} {dynamic}",
+        "format-paused": "{status_icon} <i>{dynamic}</i>",
+        "player-icons": {
+            "default": "⏸",
+            "mpv": "🎵",
+        },
+        "status-icons": {
+            "paused": "▶",
+        },
+        // "ignored-players": ["firefox"]
+    },
+
+    "mpd": {
+        "interval": 1,
+        "format": "{stateIcon} {artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) (MPD)   ",
+        "format-paused": "{stateIcon} <i>{artist} - {title}</i> ({elapsedTime:%M:%S}/{totalTime:%M:%S}) (MPD)  ",
+        "format-stopped": "Stopped (MPD)  ",
+        "format-disconnected": "Disconnected (MPD)  ",
+        "state-icons": {
+            "playing": "⏸",
+            "paused": "▶",
+        },
+        "repeat-icons": {
+            "on": "🔁",
+        },
+        "random-icons": {
+            "on": "🔀",
+        },
+        "single-icons": {
+            "on": "🔂",
+        },
+        "consume-icons": {
+            "on": "🗑️",
+        },
+        "tooltip-format": "MPD (connected) 🎵",
+        "tooltip-format-disconnected": "MPD (disconnected)",
+        "on-click": "mpc toggle",
+        "on-scroll-up": "mpc volume +5",
+        "on-scroll-down": "mpc volume -5",
+    },
+
+    "custom/mpd_volume": {
+        "exec": "/home/francois/.config/polybar.old/tmux/volume.sh",
+        "interval": 1,
+        "format": "<span foreground='#f57dad'> MPC  : </span> {}",
+        "tooltip": false,
+    },
+    "custom/keybinds": {
+        "format": "Keybinds",
+        "on-click": "kitty -e python3 /home/francois/.config/hypr/keybinds_searcher.py",
+    },
+}
