@@ -1,0 +1,395 @@
+@import "mocha.css";
+
+.container {
+    font-family: CaskaydiaCove Nerd Font;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+#cava {
+    font-family: renogare;
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.wlogout {
+    padding: 0px 8px;
+    padding-left: 8px;
+    padding-right: 4px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    border-radius: 10px;
+    color: #ff757f;
+    background: #1a1b26;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+}
+
+/* cpu */
+.sysinfo .item:nth-child(1) {
+    padding: 0px 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    border-radius: 10px;
+    color: #ff9e64;
+    background: #1a1b26;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+}
+/* memory */
+.sysinfo .item:nth-child(2) {
+    padding: 0px 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    border-radius: 10px;
+    color: #7dcfff;
+    background: #1a1b26;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+}
+/* temp */
+.sysinfo .item:nth-child(3) {
+    padding: 0px 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    border-radius: 10px;
+    color: #bb9af7;
+    background: #1a1b26;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+}
+/* disk */
+.sysinfo .item:nth-child(4) {
+    padding: 0px 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    border-radius: 10px;
+    color: #9ece6a;
+    background: #1a1b26;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+}
+
+.pacman {
+    padding: 0px 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    margin-left: 4px;
+    border-radius: 10px;
+    color: #c3e88d;
+    background: #1a1b26;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+}
+
+.volume {
+    padding: 0px 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    margin-left: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+    color: #9abdf5;
+    background: #1a1b26;
+    opacity: 0.8;
+}
+
+.popup-volume {
+    padding: 16px;
+    border-radius: 5px;
+    color: #c0caf5;
+    background-color: rgba(26, 27, 38, 0.8);
+    border: 2px solid #c3e88d;
+}
+
+.clock {
+    font-family: CaskaydiaCove Nerd Font;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    color: #7dcfff;
+    background: #1a1b26;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+}
+
+.clock_date {
+    color: rgb(94, 129, 172);
+}
+
+.popup-clock {
+    font-weight: bolder;
+    background-color: rgba(26, 27, 38, 0.8);
+    border-radius: 10px;
+    border: 2px solid #c3e88d;
+}
+
+.popup-clock .calendar-clock {
+    color: #c0caf5;
+    padding-bottom: 0.1em;
+}
+
+.popup-clock .calendar {
+    background-color: rgba(26, 27, 38, 0.8);
+    color: #c0caf5;
+    border-radius: 10px;
+}
+
+.popup-clock .calendar .header {
+    padding-top: 1em;
+    border-top: 1px solid #424242;
+    font-size: 1.3em;
+}
+
+.popup-clock .calendar:selected {
+    background-color: #3d59a1;
+}
+
+.focused {
+    padding: 0px 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    margin-left: 3px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+    color: #c3e88d;
+    background: #1a1b26;
+    opacity: 0.8;
+}
+
+.work1,
+.work2,
+.work3 {
+    padding: 0px 4px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 3px;
+    border-radius: 10px;
+    background: #c3e88d;
+    color: #4c566a;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+}
+
+/* .script { */
+/* 	padding: 0px 8px; */
+/* 	margin-top: 3px; */
+/* 	margin-bottom: 10px; */
+/* 	margin-right: 5px; */
+/* 	border-radius: 10px; */
+/* 	background: #9abdf5; */
+/* 	color: #4c566a; */
+/* 	box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px; */
+/* } */
+
+/* this is for hyprland_layout */
+.script {
+    padding: 0px 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+
+    font-size: 14px; /* Adjust font size */
+    color: @red; /* Text color (white) */
+    background-color: #1a1b26; /* Background color (dark) */
+    /* background: #9abdf5; */
+    /* color: #4c566a; */
+}
+.label {
+    padding: 0px 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+
+    font-size: 14px; /* Adjust font size */
+    color: @grad6; /* Text color (white) */
+    background-color: #1a1b26; /* Background color (dark) */
+}
+
+.music {
+    border-radius: 10px;
+    padding: 0px 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    margin-left: 8px;
+    color: #bb9af7;
+    background: #1a1b26;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+}
+
+.popup-music {
+    margin-left: 4px;
+    padding: 8px;
+    border-radius: 5px;
+    color: #c0caf5;
+    background-color: rgba(26, 27, 38, 0.8);
+    border: 2px solid #c3e88d;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+}
+
+.workspaces {
+    background: #1a1b26;
+    padding: 4px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    margin-left: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+}
+
+.workspaces button {
+    padding: 0px 3px;
+    margin: 0px 1px;
+    border-radius: 15px;
+    border: 0px;
+    color: #c0caf5;
+    background-color: #3b4261;
+    opacity: 0.7;
+}
+
+.workspaces .item.focused {
+    color: #000000;
+    background: linear-gradient(
+        45deg,
+        rgba(51, 204, 255, 1),
+        rgba(0, 255, 153, 0.8)
+    );
+    /* background: linear-gradient(45deg, #33ccff, #00ff99); */
+
+    border-radius: 15px;
+    min-width: 40px;
+    opacity: 1;
+}
+
+/* .workspaces .item.inactive { */
+/*   color: #ffffff; */
+/*   background: #545c7e; */
+/*   border-radius: 15px; */
+/*   opacity: 1; */
+/* } */
+
+.workspaces .item.visible:not(.focused) {
+    color: #ffffff; /* Keeps text color white for readability */
+    background: linear-gradient(
+        -45deg,
+        rgb(255, 105, 180),
+        @mauve
+    ); /* Gradient from hot pink to @red */
+    border-radius: 15px;
+    min-width: 40px;
+    opacity: 0.9; /* Slight transparency for a softer look */
+}
+
+.workspaces button:hover {
+    color: #ffffff;
+    background: #545c7e;
+    border-radius: 15px;
+}
+
+.tray {
+    padding: 4px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    margin-left: 8px;
+    border-radius: 10px;
+    background: #1a1b26;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+    opacity: 0.8;
+}
+
+.tray .item {
+    margin: 0 4px;
+    border-radius: 4px;
+    background-color: #545c7e;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.tray .item:hover {
+    background-color: #c3e88d;
+}
+
+.tray .item:active {
+    background-color: #7dcfff;
+}
+
+/* General styling for the battery module */
+.upower {
+    /* padding: 4px; */
+    /* margin-top: 3px; */
+    /* margin-bottom: 10px; */
+    margin-right: 8px;
+    margin-left: 8px;
+    border-radius: 10px;
+    background: #1a1b26;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
+    opacity: 0.8;
+    /* align-items: center; */
+    font-family: CaskaydiaCove Nerd Font;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* /1* Styling for the battery icon *1/ */
+.upower .icon {
+    /* content: ""; */
+    /* margin-right: 6px; */
+}
+
+/* Styling for the battery label */
+.upower .label {
+    font-weight: bold;
+    color: #00ff00;
+}
+
+/* Low battery warning (e.g., <20%) */
+.upower.low .label {
+    color: #ff0000;
+}
+
+/* Popup for additional details */
+.popup-upower {
+    padding: 8px;
+    border-radius: 10px;
+    background: #24283b;
+    color: #e0e0e0;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 6px;
+    font-size: 12px;
+}
+
+/* Styling for detailed battery information inside the popup */
+.popup-upower .upower-details {
+    font-size: 12px;
+    color: #cccccc;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+

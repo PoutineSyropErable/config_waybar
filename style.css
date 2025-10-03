@@ -61,37 +61,71 @@ window#waybar {
     padding-right: 8;
 }
 
-button {
+#button {
     box-shadow: inset 0 -3px transparent;
     border: none;
     border-radius: 0;
 }
 
-button:hover {
+#button:hover {
     background: inherit;
     color: @mauve;
     border-top: 2px solid @mauve;
 }
 
-#workspaces button {
-    padding: 0 4px;
+
+
+#workspaces {
+    background: #1a1b26;
+    padding: 4px;
+    margin: 3px 8px 10px 8px;
+    border-radius: 10px;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
 }
 
-#workspaces button.focused {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: @rosewater;
-    border-top: 2px solid @rosewater;
+#workspaces button {
+    padding: 0px 3px;
+    margin: 0px 1px;
+    border-radius: 15px;
+    color: #c0caf5;
+    background-color: #3b4261;
+    opacity: 0.7;
+    transition: all 0.2s ease;
 }
 
 #workspaces button.active {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: @mauve;
-    border-top: 2px solid @mauve;
+    color: #000000;
+    background: linear-gradient(
+        45deg,
+        rgba(51, 204, 255, 1),
+        rgba(0, 255, 153, 0.8)
+    );
+    border-radius: 15px;
+    min-width: 40px;
+    opacity: 1;
 }
 
-#workspaces button.urgent {
-    background-color: #eb4d4b;
+#workspaces button.visible {
+    color: #ffffff;
+    background: linear-gradient(
+        -45deg,
+        rgb(255, 105, 180),
+        #cba6f7  /* @mauve replacement */
+    );
+    border-radius: 15px;
+    min-width: 40px;
+    opacity: 0.9;
 }
+
+#workspaces button:hover {
+    color: #ffffff;
+    background: #545c7e;
+    border-radius: 15px;
+    opacity: 1;
+}
+
+
 
 #scratchpad {
     margin-top: 2px;
