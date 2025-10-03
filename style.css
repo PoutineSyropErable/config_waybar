@@ -8,6 +8,7 @@
     font-size: 14px;
     padding: 0;
     margin: 0;
+	opacity: 1;
 }
 
 
@@ -96,57 +97,65 @@ window#waybar {
 
 
 #workspaces {
-    background: #1a1b26;
-    padding: 2px 6px;
-    margin-top: 2px;
-    margin-bottom: 4px;
+	background: #1a1b26;
+    padding: 4px;
+    margin-top: 3px;
+    margin-bottom: 10px;
     margin-right: 8px;
     margin-left: 8px;
-    border-radius: 11px; /* +1px more rounded */
+    border-radius: 10px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14px;
     color: #ffffff;
     opacity: 0.8;
     box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 4px 1px;
 }
 
 #workspaces button {
-    padding: 2px 6px;
-    margin: 2px 1px;
-    border-radius: 7px; /* +1px more rounded */
-    border: none;
-    background-color: #3b4261;
+    padding: 1px 3px;
+    margin: 0px 1px;
+    border-radius: 15px;
+    border: 0px;
     color: #c0caf5;
+    background-color: #3b4261;
     opacity: 0.7;
-    transition: all 0.2s ease;
-    min-width: 22px;
+    font-family: CaskaydiaCove Nerd Font;
     font-size: 14px;
+
 }
 
 #workspaces button.visible {
-    color: #ffffff;
+	    color: #ffffff; /* Keeps text color white for readability */
     background: linear-gradient(
         -45deg,
         rgb(255, 105, 180),
-        #cba6f7
-    );
-    border-radius: 9px; /* +1px more rounded */
-    min-width: 24px;
-    opacity: 0.9;
-    margin: 2px 1px;
+        @mauve
+    ); /* Gradient from hot pink to @red */
+    border-radius: 15px;
+    min-width: 40px;
+    opacity: 0.9; /* Slight transparency for a softer look */
+
 }
 
 #workspaces button.active {
-    color: #000000;
+	    color: #000000;
     background: linear-gradient(
         45deg,
         rgba(51, 204, 255, 1),
         rgba(0, 255, 153, 0.8)
     );
-    border-radius: 9px; /* +1px more rounded */
-    min-width: 24px;
+    /* background: linear-gradient(45deg, #33ccff, #00ff99); */
+
+    border-radius: 15px;
+    min-width: 40px;
     opacity: 1;
-    margin: 2px 1px;
+
+}
+
+#workspaces button:hover {
+    color: #ffffff;
+    background: #545c7e;
+    border-radius: 15px;
 }
 
 
