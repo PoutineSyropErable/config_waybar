@@ -13,6 +13,10 @@ config_wired="$HOME/.config/waybar/config_bottom_desktop_wired.jsonc"
 config_wifi="$HOME/.config/waybar/config_bottom_desktop_wifi.jsonc"
 config_default="$HOME/.config/waybar/config_bottom.jsonc"
 
+config_wired_portrait="$HOME/.config/waybar/config_bottom_desktop_wired.jsonc"
+config_wifi_portrait="$HOME/.config/waybar/config_bottom_desktop_wifi.jsonc"
+config_default_portrait="$HOME/.config/waybar/config_bottom.jsonc"
+
 # Select config file based on type
 if [[ "$active_dev_type" == "ethernet" ]]; then
 	config_file="$config_wired"

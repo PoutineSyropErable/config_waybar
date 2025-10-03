@@ -2,10 +2,10 @@
     "position": "bottom",
     // "modules-left": ["network#wifi", "network#speed"],
     "modules-left": ["network#internet", "network#speed"],
-    "modules-center": ["custom/keybinds", "mpd", "custom/mpd_volume"],
+    "modules-center": ["custom/keybinds", "mpd", "custom/mpd_volume", "tray"],
     "modules-right": ["custom/gpu", "custom/gpu_mem", "custom/gpu_temp"],
-    // "output": ["DP-1", "HDMI-A-1"],
-    "output": ["DP-1", "HDMI-A-1", "DP-2"],
+    "output": ["DP-1", "HDMI-A-1"],
+    // "output": ["DP-1", "HDMI-A-1", "DP-2"],
 
     "custom/gpu_mem": {
         "exec": "echo \"$(( $(cat /sys/class/drm/card1/device/mem_info_vram_used) / 1024 / 1024 )) MB\"",
